@@ -15,10 +15,12 @@ namespace FizzBuzz
 
         public static string FizzBuzz(int n)
         {
-            string result = "";
+            var result = "";
 
             if(n % 3 == 0) result += "Fizz";
             if(n % 5 == 0) result += "Buzz";
+            
+            return string.IsNullOrEmpty(result) ? n.ToString() : result;
 
             //if (n % 3 == 0)
             //    return "Fizz";
@@ -28,8 +30,6 @@ namespace FizzBuzz
             //    return "Buzz";
 
             //if(n % 3 != 0 && n % 5 != 0) return n.ToString();
-
-            return string.IsNullOrEmpty(result) ? n.ToString() : result;
         }
 
         //public static string DivisibleByThree(int x)
