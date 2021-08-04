@@ -6,8 +6,8 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-            int max = 30;
-            for(int i=1; i<= max; i++)
+            const int max = 30;
+            for(var i=1; i<= max; i++)
             {
                 Console.WriteLine($"{FizzBuzz(i)}");
             }
