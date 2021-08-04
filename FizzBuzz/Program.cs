@@ -7,7 +7,7 @@ namespace FizzBuzz
         static void Main(string[] args)
         {
             int max = 30;
-            for(int i=1; i<= 30; i++)
+            for(int i=1; i<= max; i++)
             {
                 Console.WriteLine($"{FizzBuzz(i)}");
             }
@@ -26,26 +26,26 @@ namespace FizzBuzz
  
         }
 
-        public static string DivisibleByThree(int x)
-        {
-            if (x % 3 == 0)
-                return "Fizz";
+        //public static string DivisibleByThree(int x)
+        //{
+        //    if (x % 3 == 0)
+        //        return "Fizz";
 
-            return string.Empty;
-        }
-        public static string DivisibleByFive(int x)
-        {
-            if (x % 5 == 0)
-                return "Buzz";
+        //    return string.Empty;
+        //}
+        //public static string DivisibleByFive(int x)
+        //{
+        //    if (x % 5 == 0)
+        //        return "Buzz";
 
-            return string.Empty;
-        }
-        public static string DivisibleByFifteen(int x)
-        {
-            if (x % 15 == 0)
-                return "FizzBuzz";
+        //    return string.Empty;
+        //}
+        //public static string DivisibleByFifteen(int x)
+        //{
+        //    if (x % 15 == 0)
+        //        return "FizzBuzz";
 
-            return string.Empty;
-        }
+        //    return string.Empty;
+        //}
     }
 }
